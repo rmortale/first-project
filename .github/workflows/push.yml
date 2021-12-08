@@ -1,4 +1,4 @@
-name: Pulumi
+name: Pulumi push
 on:
   push:
     branches:
@@ -25,4 +25,3 @@ jobs:
           stack-name: dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          
