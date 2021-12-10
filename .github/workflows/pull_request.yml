@@ -1,6 +1,7 @@
 name: Pulumi PR
 on:
   - pull_request
+  
 jobs:
   preview:
     name: Preview
@@ -20,6 +21,6 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           command: preview
-          stack-name: dev
+          stack-name: prod
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
